@@ -1,14 +1,12 @@
-import './App.css'
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routes/AppRouter';
+import './index.css';
 
-function App() {
-
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold text-blue-600">
-        ✔ Tailwind is working!
-      </h1>
-    </div>
-  )
-}
+const App: React.FC = () => (
+  <BrowserRouter>
+    <AppRouter />
+  </BrowserRouter>
+);
 
 export default App
